@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8">
+      <title>Nicolas Delaval - Développeur Junior</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <!-- Header Starts -->
+      <header>
+         <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <a class="navbar-brand" href="#">Nicolas Delaval</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#aboutMe"><span class="aboutMe">A propos de moi</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#skills"><span class="skills">Compétences</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#portfolio"><span class="portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://github.com/NicolasDelaval" target="_blank"><span class="git">GitHub</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://www.linkedin.com/in/nicolas-d-36b263193/" target="_blank"><span class="contactMe">Contactez-moi</a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div class="container-fluid heroImg">
+            <div class="captionContainer">
+               <h1 class="mainTitleHeroImg text-center"><span class="myName">NICOLAS DELAVAL</span>: Développeur Web Junior</h1><br>
+               <h2 class="secondTitleHeroImg text-center">Disponible ASAP</h2><br>
+            </div>
+         </div>
+      </header>
+      <!-- Header Ends -->
+      <!-- Main Starts -->
+      <main>
+         <!-- Section "About Me" Starts -->
+         <section id="aboutMe" class="container">
+            <h1 class="text-center">A propos de moi</h1>
+            <img src="./img/myPicture.jpg" class="aboutMePicture" alt="My picture should be displayed" title="This my picture, hello !"/>
+            <p class="text-center"><i>« Je suis junior, il est vrai ; mais aux développeurs motivés, la valeur ajoutée n'attend point le nombre des années ».</i></p>
+            <p>Ancien formateur progiciel, j’ai pris la décision de devenir développeur web. Ce choix est le fruit d’une mûre réflexion et la somme de plusieurs éléments de motivation :</p>
+            <ul class="aboutMeUl">
+               <li>Mon attrait pour le web et ma volonté d’être un de ses acteurs.</li>
+               <li>L’envie d’exercer un métier où constance des évolutions technologiques et curiosité, autoformation vont de pair.</li>
+               <li>Allier autonomie et travail en équipe.</li>
+               <li>Le plaisir de rendre fonctionnelle une maquette d’un designer, de faire évoluer un produit en tenant compte d’un cahier des charges.</li>
+            </ul>
+            <p>A la recherche d’une première expérience dans le développement, je vous propose de mettre l’ensemble de mes compétences techniques et de mes savoir être à votre service.</p>
+         </section>
+         <!-- Section "About Me" Ends -->
+         <!-- Section "Skills" Starts -->
+         <section id="skills" class="container">
+            <h1 class="text-center">Compétences</h1>
+               <div class="row">
+                  <ul class="skillsLanguageUl col-sm-12 col-md-6 col-lg-3">
+                     <li><h4>Front End</h4></li>
+                     <li>Bootstrap 3.0- Bootstrap 4.0</li>
+                     <li>CSS3</li>
+                     <li>HTML 5</li>
+                     <li>JavaScript ECMAScript 5 POO</li>
+                     <li>jQuery</li>
+                  </ul>
+                  <ul class="skillsLanguageUl col-sm-12 col-md-6 col-lg-3">
+                     <li><h4>Back End</h4></li>
+                     <li>Java 11 POO</li>
+                     <li>JEE</li>
+                     <li>Spring Boot</li>
+                     <li>Php 7 POO</li>
+                     <li>PostgreSQL / MySQL</li>
+                  </ul>
+                  <ul class="skillsFrameworkUl col-sm-12 col-md-6 col-lg-3">
+                     <li><h4>Outils</h4></li>
+                     <li>Docker</li>
+                     <li>Git</li>
+                     <li>Jenkins</li>
+                     <li>jUnit</li>
+                  </ul>
+                  <ul class="skillsKnwoledgeUl col-sm-12 col-md-6 col-lg-3">
+                     <li><h4>Connaissances Métiers</h4></li>
+                     <li>Accessibilité du Web</li>
+                     <li>Modèle MVC</li>
+                     <li>Respect des normes W3C</li>
+                     <li>Responsive Design</li>
+                     <li>SEO</li>
+                  </ul>
+             </div>
+         </section>
+         <!-- Section "Skills" Ends -->
+         <!-- Section "Portfolio" Starts -->
+         <section id="portfolio" class="container">
+            <h1 class="text-center">Portfolio</h1>
+            <p class="text-center">Survolez l'une des mes réalisations pour obtenir davantage d'informations :<p>
+            <article class="row d-flex justify-content-center">
+               <div class="col-sm-12 col-md-4 col-lg-3 containerPortfolioItem m-2">
+                  <img src="./img/appJavascript.png" alt="A project'screenshot should be displayed" title="This my front-end application"/>
+                  <div class="overlay">
+                     <div class="textOverlay">Application front-end de réservation de vélos</div>
+                     <button type="button" class="btnAccessProject"><a href="#" data-toggle="modal" data-target="#myModal">Plus d'informations</a></button>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-4 col-lg-3 containerPortfolioItem m-2">
+                  <img src="./img/crudPhp.png" alt="A project'screenshot should be displayed" title="This is my php CRUD application"/></a>
+                  <div class="overlay">
+                     <div class="textOverlay">Moteur de Blog Php</div>
+                     <button type="button" class="btnAccessProject"><a href="#" data-toggle="modal" data-target="#myModal2">Plus d'informations</a></button>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-4 col-lg-3 containerPortfolioItem m-2">
+                  <img src="./img/appMusic.png"  alt="A project'screenshot should be displayed" title="This is my musical blog, records shop map"/>
+                  <div class="overlay">
+                    <div class="textOverlay">Blog musical / Annuaire de disquaires</div>
+                    <button type="button" class="btnAccessProject"><a href="#" data-toggle="modal" data-target="#myModal3">Plus d'information</a></button>
+                 </div> 
+               </div>
+               <div class="col-sm-12 col-md-4 col-lg-3 containerPortfolioItem m-2">
+                  <img src="./img/workInProgress.jpeg"  alt="A project'screenshot should be displayed" title="This is my current work in progress project records"/>
+                   <div class="overlay">
+                     <div class="textOverlay">W.I.P: Refonte d'un site d'un label indépendant</div>
+                     <button type="button" class="btnAccessProject"><a href="#" data-toggle="modal" data-target="#myModal4">Plus d'information</a></button>
+                  </div> 
+               </div>
+            </article>
+         </section>
+         <!-- Section "Portfolio" Ends -->
+      </main>
+      <!-- Main Ends -->
+      <!--Portfolio Item Modals Details Starts -->
+      <!--Portfolio Item 1 Modal Starts-->
+      <div class="modal fade" id="myModal">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                 <h3 class="modal-title portfolioObjectTitle">Application Front End: Réservation de vélos</h3>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                 <div class="portfolioItemContainer">
+                     <img class="imgPortfolio" src="./img/appJavascript.png" alt="A project'screenshot should be displayed" title="This is my front-end application"/><br>
+                     <p class="portfolioObjectSubTitle">Cette application purement front-end de réservation de vélos fut réalisée durant ma formation Openclassrooms.<br> L'objectif premier de ce projet était la découverte et l'apprentissage de JavaScript.</p>
+                      <ul class="featuresUl">
+                        <li><h4>Fonctionnalités:</h4></li>
+                        <li>Tutoriel sous la forme d'un carousel.</li>
+                        <li>Possibilité d'afficher ou de masquer à loisir le tutoriel.</li>
+                        <li>A partir de la carte, possibilité de sélectionner une station et de connaître le nombre de vélos disponibles.</li>
+                        <li>Une fois la station sélectionnée, possibilité de réserver un vélo via un formulaire simple.</li>
+                        <li>L'utilisateur valide sa réservation en signant sur un canvas.</li>
+                        <li>La réservation effectuée, un décompte s'affiche : celle-ci est valide pendant vingt minutes.</li>
+                     </ul>
+                     <ul class="techUsedUl">
+                        <li><h4>API / Compétences / Langages utilisés:</h4></li>
+                        <li>API JCDecaux</li>
+                        <li>API Google Map</li>
+                        <li>CSS3</li>
+                        <li>HTML 5</li>
+                        <li>Javascript ECMAScript 5 POO</li>
+                        <li>jQuery</li>
+                        <li>Session Store / Local Store</li>
+                     </ul>
+                     <a href="http://www.bearcreation.net/projet-3-dwj/" target="_blank" class="accessProjectLink">Tester l'application</a>
+                 </div>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Portfolio Item 1 Modal Ends-->
+      <!--Portfolio Item 2 Modal Starts-->
+      <div class="modal fade" id="myModal2">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                 <h3 class="modal-title portfolioObjectTitle">Moteur de Blog Php [C.R.U.D]</h3>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                 <div class="portfolioItemContainer">
+                     <img class="imgPortfolio" src="./img/crudPhp.png" alt="A project'screenshot should be displayed" title="This is my php CRUD application"/><br>
+                     <p class="portfolioObjectSubTitle">Ce moteur de blog Php fut réalisé durant ma formation Openclassrooms.<br> L'objectif premier de ce projet était la découverte et l'apprentissage de Php.</p>
+                       <ul class="featuresUl">
+                        <li><h4>Fonctionnalités: </h4></li>
+                        <li>L'administrateur peut ajouter, modifier, supprimer un billet.</li>
+                        <li>L'administrateur peut modérer les commentaires laissés sur les billets : les approuver ou les supprimer</li>
+                        <li>S'il est enregistré et connecté, un utilisateur lecteur peut commenter un billet du blog.</li>
+                        <li>S'il est enregistré et connecté, un utilisateur lecteur peut signaler un commentaire.</li>
+                     </ul>
+                     <ul class="techUsedUl">
+                        <li><h4>Technologies et Langages utilisés:</h4></li>
+                        <li>Bootstrap 3</li>
+                        <li>CSS3</li>
+                        <li>HTML 5</li>
+                        <li>Modèle MVC</li>
+                        <li>MySQL</li>
+                        <li>Php [syntaxe POO pour les models]</li>
+                        <a href="http://www.bearcreation.net/projet-4-dwj/" target="_blank" class="accessProjectLink">Visiter le blog</a>
+                     </ul>
+                 </div>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Portfolio Item 2 Modal Ends-->
+      <!--Portfolio Item 3 Modal Starts-->
+      <div class="modal fade" id="myModal3">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                 <h3 class="modal-title portfolioObjectTitle">Blog Musical- Annuaire de Disquaires [C.R.U.D]</h3>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                 <div class="portfolioItemContainer">
+                     <img class="imgPortfolio" src="./img/appMusic.png" alt="A project'screenshot should be displayed" title="This is my musical blog, records shop map"/><br>
+                     <p class="portfolioObjectSubTitle">Ce blog musical- annuaire de disquaires fut réalisé comme projet libre durant ma formation Openclassrooms.</p>
+                     <ul class="featuresUl">
+                        <li><h4>Fonctionnalités:</h4></li>
+                        <li>L'administrateur peut écrire, modifier, supprimer un billet sur le blog.</li>
+                        <li>L'administrateur peut ajouter, modifier, supprimer un disquaire sur la carte du site.</li>
+                        <li>Un utilisateur peut lire les billets du blog et consulter la carte des disquaires sans être enregistré ou connecté.</li>
+                        <li>S'il est enregistré et connecté, un utilisateur lecteur peut commenter un billet du blog.</li>
+                     </ul>
+                     <ul class="techUsedUl">
+                        <li><h4>API / Compétences / Langages utilisés:</h4></li>
+                        <li>API Google Map</li>
+                        <li>Bootstrap 3</li>
+                        <li>CSS3</li>
+                        <li>HTML 5</li>
+                        <li>Javascript ECMAScript 5 POO</li>
+                        <li>jQuery</li>
+                        <li>Modèle MVC</li>     
+                        <li>MySQL</li>
+                        <li>Php POO</li>
+                     </ul>
+                     <a href="http://www.bearcreation.net/projet-5-dwj/" target="_blank" class="accessProjectLink">Visiter le blog</a>
+                 </div>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Portfolio Item 3 Modal Ends-->
+      <!--Portfolio Item 4 Modal Starts-->
+      <div class="modal fade" id="myModal4">
+         <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                 <h3 class="modal-title portfolioObjectTitle">Refonte du site e-commerce d'un label musical indépendant</h3>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                 <div class="portfolioItemContainer">
+                     <img class="imgPortfolio" src="./img/workInProgress.jpeg" alt="A project'screenshot should be displayed" title="This is my current work in progress"/><br>
+                     <p class="portfolioObjectSubTitle">Cette refonte de site e-commerce est le projet sur lequel je travaille actuellement. <br> En accord avec mon commanditaire, le site n'est pas public jusqu'à la mise en production de celui-ci. <br> Toutefois, il va s'en dire que je serais ravi de vous montrer l'avancée de mon travail en entretien.</p>
+                     <ul class="featuresUl">
+                        <li><h4>Tâches réalisées: </h4></li>
+                        <li>Conception et intégration du nouveau design.</li>
+                        <li>Migration de la BDD produits de PrestaShop vers WooCommerce.</li>
+                        <li>Intégration de modules à but rédactionnels.</li>
+                        <li>Responsive Design</li>
+                     </ul>
+                     <ul class="techUsedUl">
+                        <li><h4>API / Compétences / Langages utilisés: </h4></li>
+                        <li>CSS3</li>
+                        <li>HTML 5</li>
+                        <li>WordPress et son extension WooCommerce</li>
+                        <li>SEO</li>
+                     </ul>
+                 </div>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+               </div>
+            </div>
+         </div>
+      </div>
+       <!--Portfolio Item 4 Modal Ends-->
+       <!--Footer Starts-->
+      <footer class="page-footer font-small black">
+         <div class="footer-copyright text-center py-3">© <script>document.write(new Date().getFullYear());</script> Copyright:
+            <a href="http://bearcreation.net">Bearcreation</a>
+         </div>
+      </footer>
+       <!--Footer Ends-->
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+   </body>
+</html>
+

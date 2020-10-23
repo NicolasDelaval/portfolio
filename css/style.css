@@ -1,0 +1,368 @@
+/*****************0.0 Fonts declaration****************/
+@font-face{
+  font-family: "FontAwsome";
+  src: url("../fonts/FontAwsome/fa-solid-900.eot") format("embededded-opentype");
+  src: url("../fonts/FontAwsome/fa-solid-900.svg") format("svg");
+  src: url("../fonts/FontAwsome/fa-solid-900.ttf") format("truetype");
+  src: url("../fonts/FontAwsome/fa-solid-900.woff") format("woff");
+  src: url("../fonts/FontAwsome/fa-solid-900.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*****************1.0 General  Styling*****************/
+/*1.1 Body Styling*/
+body {
+  height: 100%;
+  background-color: white !important;
+}
+
+/*1.2 Ul Styling*/
+ul{
+	list-style: none;
+}
+
+li a, a{
+	text-decoration: none;
+  color: black;
+}
+
+/*1.3 Sections Global Styling*/
+h1{
+  margin-bottom: 1rem !important;
+}
+
+#aboutMe, #skills, #portfolio{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+#aboutMe, #skills, #portfolio{
+  margin-bottom: 15px;
+}
+
+#aboutMe:after, #skills:after{
+  content: "";
+  max-width: 350px;
+  height: 1px;
+  background: lightgrey;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#skills:before, #portfolio:before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #5cadd3;
+  border-radius: 50%;
+  border: 3px solid #fdfdfd;
+  display: inline-block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:-15px;
+  z-index: 5;
+}
+
+/******************2.0 Header Styling**********************/
+/*2.1 Hero Image Styling*/
+.heroImg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/naoned.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+/*2.2 Hero Caption Styling*/
+.captionContainer{
+  position: absolute;
+  top:30%;
+  margin:auto;
+  left: 0;
+  right: 0;
+  max-width: 1000px;
+  height: 260px;
+  padding: 10px 15px;
+}
+
+.myName{
+  color: #5cadd3;
+}
+
+.mainTitleHeroImg{
+  color: white;
+}
+
+.secondTitleHeroImg{
+  color: white;
+}
+
+/*2.3 Main Nav Menu Styling*/
+.nav-link{
+  font-size: 1.2em;
+}
+
+.aboutMe::before, .skills::before, .portfolio::before, .contactMe::before, .git::before{
+  font-family: 'FontAwsome';
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.aboutMe::before{
+  content: "\f007";
+}
+
+.skills::before{
+  content: "\f0ad";
+}
+
+.portfolio::before{
+  content: "\f03e";
+}
+
+.git::before{
+  content: "\126";
+}
+
+.contactMe::before{
+  content: "\f0e0";
+}
+
+/********************3.0 "About Me" Section Styling******************/
+/*3.1 Ul Styling*/
+.aboutMeUl{
+  list-style: none;
+}
+
+.aboutMeUl li::before{
+  font-family: "FontAwsome";
+  content: '\f0a4';
+  font-size: 1em;
+  margin-right: 7px;
+  color: #5cadd3;
+}
+
+/*3.2 Picture Styling*/
+.aboutMePicture{
+  display: block;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  padding: 3px;
+  border: solid 1px black;
+  margin:auto;
+  left: 0;
+  right: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/*********************** 4.0 Skills Section Styling ***********************/
+.skillsContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillsLanguageUl, .skillsFrameworkUl, .skillsKnwoledgeUl{
+  list-style: none;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.skillsLanguageUl li:not(:first-child)::before{
+  font-family: "FontAwsome";
+  content: '\f121';  
+  font-size: 1em;
+  margin-right: 7px;
+  color: #5cadd3;
+}
+
+.skillsFrameworkUl li:not(:first-child)::before{
+  font-family: "FontAwsome";
+  content: '\f552';  
+  font-size: 1em;
+  margin-right: 7px;
+  color: #5cadd3;
+}
+
+.skillsKnwoledgeUl li:not(:first-child)::before{
+  font-family: "FontAwsome";
+  content: '\f5da';  
+  font-size: 1em;
+  margin-right: 7px;
+  color: #5cadd3;
+}
+
+/**********************************5.0 Portfolio Section Styling*******************************/
+/*5.1 Portfolio Item's Container Styling*/
+
+.containerPortfolioItem{
+  border: 1px solid black;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.8);
+  width: 200px;
+  height: 200px;
+}
+
+/*5.2 IMG Styling*/
+#portfolio img{
+ width: 100%;
+ height: 100%;
+}
+
+/*5.3 Overlay Sytling*/
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border:2px solid white;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.containerPortfolioItem:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.textOverlay{
+  width: 200px;
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*5.3 "Access Project's Modal" Button Styling*/
+.btnAccessProject{
+  display: block;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:70%;
+  width: 158px;
+  background-color: rgba(92, 173, 211, 1);
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 5px 5px;
+}
+
+.btnAccessProject a{
+  color: white;
+  font-size: 1em;
+}
+
+.btnAccessProject:hover{
+  opacity: 0.9;
+  color:black;
+}
+
+.btnAccessProject a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.modal-title{
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+/******************6.0 Portfolio Item's Modal Window Styling*******************************/
+.modal-content{
+  border-radius: 25px !important;
+}
+
+.modal-title{
+  width: 100%;
+}
+
+.portfolioObjectTitle{
+  text-align: center;
+}
+
+.portfolioObjectSubTitle{
+  font-style: italic;
+  text-align: center;
+}
+
+.featuresUl li:not(:first-child)::before{
+  font-family: "FontAwsome";
+  content: '\f00c';  
+  font-size: 1em;
+  margin-right: 7px;
+  color: #5cadd3;
+}
+
+.techUsedUl li:not(:first-child)::before{
+  font-family: "FontAwsome";
+  content: '\f552';  
+  font-size: 1em;
+  margin-right: 7px;
+  color: #5cadd3;
+}
+
+.accessProjectLink{
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 150px;
+  color: white;
+  text-align: center;
+  border: 1px solid #5cadd3;
+  background-color: #5cadd3;
+  padding: 5px 5px;
+}
+
+.accessProjectLink:hover{
+  opacity: 0.8;
+  color: white;
+  text-decoration: none;
+}
+
+.imgPortfolio{
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border: 1px solid black;
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.8);
+}
+
+/*********7.0 Responsive Design***********/
+@media screen and (max-width: 915px){
+  .aboutMe, .skills, .portfolio, .git, .contactMe{
+    font-size: 0.8em !important;
+
+  }
+}
